@@ -1,0 +1,27 @@
+info:
+  name: Actualizar Empleado
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: https://veterinariabobby.tech/eaecact4_t4/api/empleados/4
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Julio Julian",
+        "email": "julio@empresa.com",
+        "salario": 35000.00,
+        "departamentoId": 3
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhbGV4aXMiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNzk0NDI1Mzc2LCJleHAiOjE3OTQ1MTE3NzZ9.Pm4ufmiEe5Z7JARQ46cMYyqGQpc-mk4h5w3j-Ld7OlQ7NQmuLpYRq7HBt7Jp4a9w
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

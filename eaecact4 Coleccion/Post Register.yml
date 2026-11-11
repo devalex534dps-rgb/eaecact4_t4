@@ -1,0 +1,24 @@
+info:
+  name: Post Register
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://veterinariabobby.tech/eaecact4_t4/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "username": "alexis",
+        "email": "alexis@empresa.com",
+        "password": "123456"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
